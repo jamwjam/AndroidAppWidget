@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jamwjam.github.io.appWidget"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+<application
+    android:icon="@drawable/ic_launcher"
+    android:label="@string/app_name" >
+    <receiver android:name="jamwjam.github.io.appWidget.WidgetProvider" >
+        <intent-filter >
+            <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+            <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+            <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+            <action android:name="AUTO_UPDATE" />
+        </intent-filter>
+
+        <meta-data
+            android:name="android.appwidget.provider"
+            android:resource="@xml/widget_info" />
+    </receiver>
+
+    <service
+        android:name="jamwjam.github.io.appWidget.WidgetService"
+        android:exported="false"
+        android:permission="android.permission.BIND_REMOTEVIEWS" />
+</application>
+
+
+<uses-sdk android:minSdkVersion="8" />
+
+</manifest>
+
+
+
+
+
+<!--<manifest xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--package="jamwjam.github.io.utrackyapp">-->
+
+<!--<application android:allowBackup="true" android:label="@string/app_name"-->
+    <!--android:icon="@drawable/ic_launcher" android:theme="@style/AppTheme">-->
+
+<!--</application>-->
+
+<!--</manifest>-->
