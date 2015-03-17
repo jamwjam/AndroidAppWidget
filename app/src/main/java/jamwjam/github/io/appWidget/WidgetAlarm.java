@@ -4,7 +4,6 @@ import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-
 import java.util.Calendar;
 
 /**
@@ -12,7 +11,7 @@ import java.util.Calendar;
  */
 public class WidgetAlarm {
     private final int ALARM_ID = 0;
-    private final int INTERVAL_MILLIS = 1000;
+    private final int INTERVAL_MILLIS = 3000;
     private final Context context;
 
     public WidgetAlarm(Context context)
