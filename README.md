@@ -1,4 +1,4 @@
 AppWidget
 =========
 
-Application Widget Sample I made
+Sample Implementation of Android Application Widget
